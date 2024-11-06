@@ -1,6 +1,7 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
+    "no-unused-vars": "error", // Checks for unused vars
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     "react-hooks/exhaustive-deps": "warn", // Checks effects of Hooks useEffect, useCallBack, etc
     "react/react-in-jsx-scope": "off" // No need for React import in Next.js
