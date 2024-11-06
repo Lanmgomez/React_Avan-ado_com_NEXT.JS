@@ -1,8 +1,8 @@
 function Main() {
   return (
-    <main className="main">
+    <div>
       <h1>React Avançado</h1>
-    </main>
+    </div>
   )
 }
 
