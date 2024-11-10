@@ -22,3 +22,6 @@ npx lint-staged
 jest:
 npm install --save-dev jest @types/jest jest-environment-jsdom
 npm install --save-dev @testing-library/react @testing-library/jest-dom @testing-library/user-event --force
+
+sass:
+npm install sass@1.49.0
