@@ -30,5 +30,7 @@ IMPORTANT: when I used, needed to install: sudo apt install ruby-sass
 The new versions use dart-sass instead.
 
 Storybook:
+IMPORTANT: the storybook only works in 100% WSL workspace, before try it, clone the repository project in a WSL workspace
+
 npx storybook@latest init
 to run: npm run storybook

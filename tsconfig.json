@@ -20,7 +20,8 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@/styles/*": ["app/styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/components/*": ["components/*"]
     }
   },
   "include": [
