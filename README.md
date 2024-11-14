@@ -17,6 +17,7 @@ npx husky add .husky/pre-commit "npx --no-install lint-staged"
 
 lint-staged explication: (Check .husky/pre-commit, you create a hook for check your code before commit)
 npm install --save-dev lint-staged
+npm install eslint-config-next --save-dev
 npx lint-staged
 
 jest:
