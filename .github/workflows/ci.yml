@@ -1,3 +1,34 @@
+# name: ci
+# on: [pull_request]
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v3
+
+#       - name: Setup Node
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 18.x
+#           cache: 'npm'
+
+#       - name: Install Dependencies
+#         run: npm install --legacy-peer-deps
+
+#       - name: Configure Husky
+#         run: npx husky install
+
+#       - name: Linting
+#         run: npm run lint
+
+#       - name: Testing
+#         run: npm run test
+
+#       - name: Build
+#         run: npm run build
+
 name: ci
 on: [pull_request]
 
@@ -15,10 +46,9 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
+        env:
+          NODE_ENV: development # Garante que dependências de desenvolvimento sejam instaladas
         run: npm install --legacy-peer-deps
-
-      - name: Configure Husky
-        run: npx husky install
 
       - name: Linting
         run: npm run lint
