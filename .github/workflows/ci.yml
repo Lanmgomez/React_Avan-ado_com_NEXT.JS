@@ -48,7 +48,7 @@ jobs:
       - name: Install Dependencies
         env:
           NODE_ENV: development # Garante que dependências de desenvolvimento sejam instaladas
-        run: npm install --legacy-peer-deps
+        run: npm install --force
 
       - name: Linting
         run: npm run lint
