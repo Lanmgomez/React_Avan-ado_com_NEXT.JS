@@ -15,7 +15,10 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
+
+      - name: Configure Husky
+        run: npx husky install
 
       - name: Linting
         run: npm run lint
