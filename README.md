@@ -22,6 +22,8 @@ npx lint-staged
 jest:
 npm install --save-dev jest @types/jest jest-environment-jsdom
 npm install --save-dev @testing-library/react @testing-library/jest-dom @testing-library/user-event --force
+npm install --save-dev identity-obj-proxy
+
 To run test: npm run test:watch
 
 sass:
